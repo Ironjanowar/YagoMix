@@ -26,7 +26,9 @@ defmodule YagoMix.MixProject do
       {:jason, "~> 1.1"},
       {:tesla, "~> 1.2.1"},
       {:distillery, "~> 2.0"},
-      {:logger_file_backend, "0.0.10"}
+      {:logger_file_backend, "0.0.10"},
+      {:timex, "~> 3.0"},
+      {:quantum, "~> 2.3"}
     ]
   end
 end

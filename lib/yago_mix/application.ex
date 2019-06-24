@@ -11,6 +11,7 @@ defmodule YagoMix.Application do
     # List all child processes to be supervised
     children = [
       ExGram,
+      YagoMix.Scheduler,
       {YagoMix.Bot, [method: :polling, token: token]}
     ]
 

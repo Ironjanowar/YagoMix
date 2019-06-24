@@ -23,3 +23,9 @@ config :logger, :error,
   path: "log/error.log",
   level: :error,
   format: "$dateT$timeZ [$level] $message\n"
+
+config :yago_mix, YagoMix.Scheduler,
+  timezone: "Europe/Madrid",
+  jobs: [
+    {"0 9 * * *", {YagoMix.Cron, :send_spam, []}}
+  ]
