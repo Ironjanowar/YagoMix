@@ -24,3 +24,6 @@ yago_mix-*.tar
 
 # Ignore tokens
 *.token
+
+# Ignore logs dir
+log/
